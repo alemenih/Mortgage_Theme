@@ -85,7 +85,6 @@
         android:padding="5dp"
         android:textSize="18sp"
         android:editable="true"
-        android:layout_alignBottom="@+id/interestBar"
         android:layout_alignLeft="@+id/principalEditText"
         android:layout_alignStart="@+id/principalEditText"
 
@@ -93,19 +92,21 @@
         android:layout_alignEnd="@+id/principalEditText"
         android:inputType="numberDecimal"
         android:text="@string/interest_amount"
-        android:gravity="center" />
+        android:gravity="center"
+        android:layout_alignBottom="@+id/interestLabel" />
 
     <SeekBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/interestBar"
         android:max="15"
-        android:layout_below="@+id/downPaymentEditText"
         android:layout_toRightOf="@+id/principalEditText"
         android:layout_alignRight="@+id/linearLayout"
         android:layout_alignEnd="@+id/linearLayout"
         android:indeterminate="false"
-        android:progress="@integer/Interest_spinner_progress" />
+        android:progress="@integer/Interest_spinner_progress"
+        android:layout_alignBottom="@+id/interestLabel"
+        android:layout_alignTop="@+id/interestEditText" />
 
     <Button
         android:layout_width="wrap_content"
